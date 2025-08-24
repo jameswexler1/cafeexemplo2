@@ -1,0 +1,35 @@
+coffee:
+  label: "Café"
+  items:
+    - name: Espresso
+      price: 6.50
+      description: Nosso espresso é preparado com grãos especiais, moídos na hora, extraindo sabores intensos e aromáticos em cada gole.
+    - name: Doppio
+      price: 9.00
+      description: Espresso duplo, intenso e encorpado, feito com grãos 100% arábica de alta qualidade.
+    - name: Cappuccino
+      price: 8.50
+      description: Feito com café especial e leite fresco vaporizado, criando uma espuma cremosa e sedosa.
+    - name: Latte Macchiato
+      price: 10.00
+      description: Camadas de leite cremoso e espresso, equilibrado, suave e visualmente encantador.
+    - name: Mocha
+      price: 11.00
+      description: Combinação de espresso, chocolate puro e leite cremoso, rico, indulgente e reconfortante.
+
+seasonal:
+  label: "Sazonal"
+  items:
+    - name: Arabica Dream
+      price: 12.00
+      description: Espresso delicado e sofisticado, 100% arábica, com aromas suaves, notas frutadas e final aveludado.
+
+pastries:
+  label: "Doces"
+  items:
+    - name: Cornetto
+      price: 6.00
+      description: Croissant fresco, assado diariamente.
+    - name: Torta de Arroz
+      price: 8.50
+      description: Torta de arroz no estilo local, saborosa e caseira.

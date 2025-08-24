@@ -1,0 +1,35 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid three">
+      <div>
+        <h4>O Café da Baixada</h4>
+        <p>{{ .Site.Params.address }}<br>{{ .Site.Params.phone }}<br>{{ .Site.Params.email }}</p>
+      </div>
+      <div>
+        <h4>Horários</h4>
+        <table class="hours" data-aos="fade-up">
+<table class="hours" data-aos="fade-up">
+  {{ range .Site.Data.hours.hours }}
+    <tr>
+      <td class="day">{{ .day }}</td>
+      <td>{{ .time }}</td>
+    </tr>
+  {{ end }}
+</table>
+        </table>
+      </div>
+      <div>
+        <h4>Siga-nos nas Redes</h4>
+        <p>
+          {{ with .Site.Params.instagram }}
+            <a href="{{ . }}" target="_blank" rel="noopener">Instagram</a><br>
+          {{ end }}
+          {{ with .Site.Params.facebook }}
+            <a href="{{ . }}" target="_blank" rel="noopener">Facebook</a>
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    <p class="muted small">© {{ now.Year }} O Café da Baixada</p>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/">O Café da Baixada</a>
+    <input id="nav-toggle" type="checkbox" />
+    <label class="burger" for="nav-toggle">&#9776;</label>
+    <nav>
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

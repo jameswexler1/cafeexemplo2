@@ -1,0 +1,27 @@
+<section class="hero" style="position: relative; overflow: hidden;">
+  <!-- Overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+  "></div>
+
+  <div class="container">
+    <div class="hero-inner" style="position: relative; z-index: 2;">
+      <div data-aos="fade-right">
+        <h1 style="color: #fff;">{{ .Get "title" }}</h1>
+        <p class="lead" style="
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.25rem;
+        ">{{ .Get "subtitle" }}</p>
+        <div class="actions">
+          <a class="btn" href="{{ .Get "ctaPrimaryLink" }}">{{ .Get "ctaPrimaryText" }}</a>
+          <a class="btn alt" href="{{ .Get "ctaSecondaryLink" }}">{{ .Get "ctaSecondaryText" }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

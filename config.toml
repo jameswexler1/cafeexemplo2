@@ -1,0 +1,53 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "O Café da Baixada"
+theme = "pavia-cafe"
+[pagination]
+  pagerSize = 6
+enableRobotsTXT = true
+
+[params]
+  description = "Um café artesanal no coração do Guarujá. Café especial, doces frescos e hospitalidade acolhedora."
+  address = "Rua das Palmeiras, Guarujá, Brasil"
+  phone = "+55 0382 000000"
+  email = "cafe@ocafedabaixada.com"
+  openGraphImage = "/images/og-cafe.jpg"
+  instagram = "https://instagram.com/ocafedabaixada"
+  facebook = "https://facebook.com/ocafedabaixada"
+  tiktok = ""
+  googleMapsQuery = "O café da Baixada, Guarujá, Brasil"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Menu"
+    url = "/menu/"
+    weight = 2
+  [[menu.main]]
+    name = "Galeria"
+    url = "/gallery/"
+    weight = 3
+  [[menu.main]]
+    name = "Sobre Nós"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+  [[menu.main]]
+    name = "Contatos"
+    url = "/contact/"
+    weight = 6
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+  taxonomy = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true

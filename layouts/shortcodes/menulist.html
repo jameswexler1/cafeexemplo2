@@ -1,0 +1,15 @@
+{{/* Loop over all categories in menu.yaml */}}
+{{ range $key, $cat := .Site.Data.menu }}
+  <h2 data-aos="fade-up">{{ $cat.label }}</h2>
+  <ul class="menu-list" data-aos="fade-up">
+    {{ range $cat.items }}
+      <li class="menu-item">
+        <div>
+          <strong>{{ .name }}</strong>
+          <span class="muted">{{ .description }}</span>
+        </div>
+        <div class="price">R${{ printf "%.2f" .price }}</div>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

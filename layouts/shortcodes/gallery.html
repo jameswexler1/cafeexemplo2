@@ -1,0 +1,10 @@
+<div class="gallery grid three" data-aos="fade-up">
+  {{ range first 6 (where .Site.RegularPages "Section" "gallery") }}
+    <div class="gallery-item" data-aos="zoom-in">
+      {{ with .Params.images }}
+        <img src="{{ index . 0 }}" alt="{{ $.Page.Title }}">
+      {{ end }}
+      <p class="muted small">{{ .Title }}</p>
+    </div>
+  {{ end }}
+</div>

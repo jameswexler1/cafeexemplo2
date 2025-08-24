@@ -1,0 +1,4 @@
+
+<a href="https://wa.me/{{ .Get "number" }}?text={{ .Get "text" | urlquery }}" target="_blank" class="btn btn-whatsapp">
+  📱 {{ with .Get "label" }}{{ . }}{{ else }}Falar no WhatsApp{{ end }}
+</a>
