@@ -1,4 +1,4 @@
-<form name="reserva" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+<form name="reserva" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form" action="/contact/obrigado">
   <!-- Campo oculto contra bots -->
   <p style="display:none;">
     <label>Não preencher se for humano: <input name="bot-field"></label>
@@ -29,9 +29,7 @@
     <textarea name="notes" rows="4"></textarea>
   </label>
 
-  <!-- Hidden inputs for Netlify -->
+  <!-- Redireciona para página de agradecimento -->
   <input type="hidden" name="form-name" value="reserva">
-  <input type="hidden" name="redirect" value="/contact/obrigado/">
-
   <button class="btn" type="submit">Solicitar reserva</button>
 </form>

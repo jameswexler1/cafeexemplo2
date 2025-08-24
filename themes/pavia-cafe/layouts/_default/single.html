@@ -2,7 +2,11 @@
 <section class="section">
   <div class="container narrow">
     <h1 data-aos="fade-up">{{ .Title }}</h1>
+
+    {{ if .Date }}
     <p class="muted" data-aos="fade-up">{{ .Date.Format "02 Jan 2006" }}</p>
+    {{ end }}
+
     <div class="content" data-aos="fade-up">
       {{ .Content }}
     </div>
