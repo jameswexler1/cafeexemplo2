@@ -1,7 +1,7 @@
 ---
 title: "Obrigado pela Reserva!"
 description: "Agradecemos pela sua solicitação de reserva no O Café da Baixada."
-url: "/thankyou/thankyou"
+url: "/contact/obrigado"
 ---
 
 <div class="thankyou-box">
