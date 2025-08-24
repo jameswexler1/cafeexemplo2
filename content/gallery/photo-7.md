@@ -11,7 +11,3 @@ Torta de mirtilo fresca e macia, com recheio doce e suculento, coroada por uma m
 
 
 Here’s something important:
-
-{{< warning >}}
-Torta de mirtilo é coisa de viado.
-{{< /warning >}}
